@@ -1,0 +1,80 @@
+/*start-header*/
+.container-fluid .row-header{
+  padding: 0px;
+  text-align: center;
+  background-image: url("/assets/bootstrap/img/header.png");
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size: cover;
+}
+.container-fluid .row-header span{
+  font-family: IRANSans_Bold;
+  font-size: 18px;
+  top: 40px;
+  position: relative;
+}
+.container-fluid .row-header .search{
+  background-color: #ffffff;
+  opacity: 75%;
+  margin-top: 60px;
+  border-radius: 15px;
+  height: 60px;
+  border: 2px solid #03af8c;
+  padding: 0px;
+}
+.container-fluid .row-header .search form input{
+  font-family: IRANSans_Bold;
+  color: #03af8c;
+  padding: 0px;
+  height: 50px;
+  margin-top: 3px;
+  outline: 0px;
+  box-shadow: none;
+  border: none;
+  border-radius: 15px;
+}
+.container-fluid .row-header .search form button{
+     border-radius:100%;
+     background-color: #03af8c;
+     border: none;
+    padding:10px ;
+     outline: 0px;
+     color: #ffffff;
+     margin-top: 9px;
+  margin-left: 5px;
+}
+.container-fluid .row-header .col-md-8{
+  top: 175px;
+}
+@media (max-width: 970px) {
+  .container-fluid .row-header .col-md-8{
+    top: 30px;
+  }
+}
+.container-fluid .row-header a{
+  margin-top: 30px;
+  font-family: IRANSans_Bold;
+  text-decoration: none;
+  color: #ff7800;
+  border: 1px solid #ff7800;
+  padding: 15px 70px;
+  background-color: #ffffff;
+  opacity: 75%;
+  margin-left: 30px;
+  border-radius: 35px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.container-fluid .row-header a:hover{
+   color: #03af8c;
+  border: 1px solid #03af8c;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+/*end-header*/
