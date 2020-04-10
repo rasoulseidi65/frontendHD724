@@ -41,3 +41,9 @@
 ::ng-deep.ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item{
   text-align: right!important;
 }
+::ng-deep p-inputmask.ng-dirty.ng-invalid > .ui-inputtext, .ui-inputtext.ng-dirty.ng-invalid {
+  border: 1.3px solid #ff0808!important;
+}
+::ng-deep.ui-inputtext.ng-valid {
+  border: 1.3px solid #00C851 !important;
+}

@@ -8,8 +8,8 @@ import {AccordionModule} from 'primeng/accordion';
 import {
   DialogModule,
   DropdownModule, EditorModule,
-  FieldsetModule, FileUploadModule, InputTextareaModule,
-  InputTextModule, KeyFilterModule,
+  FieldsetModule, FileUploadModule, InputMaskModule, InputTextareaModule,
+  InputTextModule, KeyFilterModule, MenubarModule,
   MessageModule,
   OverlayPanelModule,
   PanelModule, PasswordModule,
@@ -60,7 +60,9 @@ import { TeacherlistComponent } from './teacher/teacherlist/teacherlist.componen
     TableModule,
     DialogModule,
     PasswordModule,
-    KeyFilterModule
+    KeyFilterModule,
+    InputMaskModule,
+    MenubarModule
   ],
 
   exports:[DashboardComponent]

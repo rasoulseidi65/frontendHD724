@@ -29,7 +29,7 @@ export class NewteacherComponent implements OnInit {
       'nationalCode': new FormControl('', Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(10)])),
       'mobile': new FormControl('',Validators.compose([Validators.required, Validators.minLength(11), Validators.maxLength(11)])),
       'email': new FormControl('', Validators.compose([Validators.required, Validators.email])),
-      'password': new FormControl(''),
+      'password': new FormControl('',Validators.compose([Validators.required, Validators.minLength(8)])),
       'profileImage': new FormControl('', Validators.required),
       'madrak': new FormControl('', Validators.required),
       'cv': new FormControl('', Validators.required)
