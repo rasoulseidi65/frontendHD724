@@ -2,7 +2,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-
+*{
+  cursor: pointer;
+}
 @font-face {
   font-family: 'IRANSans_Bold';
   src: url('/assets/bootstrap/fonts/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');

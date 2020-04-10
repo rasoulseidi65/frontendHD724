@@ -15,53 +15,41 @@
       >
 
       <p-accordion>
-        <p-accordionTab header="مديريت کاربرها" [selected]="true">
+        <p-accordionTab header="مديريت مدرس ها" [selected]="true">
           <mat-list>
-            <mat-list-item>Item 1</mat-list-item>
+            <mat-list-item routerLink="./newTeacher">ثبت مدرس جدید</mat-list-item>
             <mat-divider></mat-divider>
-            <mat-list-item>Item 2</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Item 3</mat-list-item>
+            <mat-list-item routerLink="./listTeacher">لیست مدرس ها</mat-list-item>
+
           </mat-list>
         </p-accordionTab>
 
-        <p-accordionTab header="مديريت مدرس ها">
+        <p-accordionTab header="مديريت دوره های آموزشی">
           <mat-list>
-            <mat-list-item>Item 1</mat-list-item>
+            <mat-list-item>ثبت دوره جدید</mat-list-item>
             <mat-divider></mat-divider>
-            <mat-list-item>Item 2</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Item 3</mat-list-item>
-          </mat-list>
-        </p-accordionTab>
-        <p-accordionTab header="مديريت فيلم ها">
-          <mat-list>
-            <mat-list-item>Item 1</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Item 2</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Item 3</mat-list-item>
+            <mat-list-item>لیست دوره های آموزشی</mat-list-item>
           </mat-list>
         </p-accordionTab>
         <p-accordionTab header="مديريت مقاله ها">
           <mat-list>
-            <mat-list-item>Item 1</mat-list-item>
+            <mat-list-item routerLink="./newpaper">مقاله جدید</mat-list-item>
             <mat-divider></mat-divider>
-            <mat-list-item>Item 2</mat-list-item>
+            <mat-list-item routerLink="./paperlist">لیست مقالات</mat-list-item>
             <mat-divider></mat-divider>
             <mat-list-item>Item 3</mat-list-item>
           </mat-list>
         </p-accordionTab>
-        <p-accordionTab header="Header 2">
+        <p-accordionTab header="مدیریت نظرات">
           <mat-list>
-            <mat-list-item>Item 1</mat-list-item>
+            <mat-list-item>پاسخ نظرات</mat-list-item>
             <mat-divider></mat-divider>
             <mat-list-item>Item 2</mat-list-item>
             <mat-divider></mat-divider>
             <mat-list-item>Item 3</mat-list-item>
           </mat-list>
         </p-accordionTab>
-        <p-accordionTab header="Header 2">
+        <p-accordionTab header="مدیریت پرداخت ها">
           <mat-list>
             <mat-list-item>Item 1</mat-list-item>
             <mat-divider></mat-divider>
@@ -91,7 +79,7 @@
         </div>
 
         <div class="ui-toolbar-group-left">
-          <p-splitButton label="رسول صيدي" [model]="items"></p-splitButton>
+          <p-splitButton label="رسول صيدي" [model]="items" ></p-splitButton>
         </div>
       </p-toolbar>
 

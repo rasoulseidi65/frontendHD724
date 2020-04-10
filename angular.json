@@ -35,12 +35,15 @@
               "node_modules/primeng/resources/themes/nova-light/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
+              "node_modules/quill/dist/quill.core.css",
+              "node_modules/quill/dist/quill.snow.css",
               "src/styles.scss"
             ],
             "scripts": [
               "src/assets/bootstrap/js/jquery.min.js",
               "src/assets/bootstrap/js/bootstrap.js",
-              "src/assets/bootstrap/js/custom.js"
+              "src/assets/bootstrap/js/custom.js",
+              "node_modules/quill/dist/quill.js"
             ]
           },
           "configurations": {

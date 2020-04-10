@@ -122,7 +122,7 @@ mat-list-item{
 color: #fff;
 }
 mat-divider{
-color: #fff!important;
+  color: #4c4c4c !important;
 }
 .mat-dividerMenu{
   color: #000;
@@ -142,3 +142,7 @@ p-accordionTab{
 ::ng-deep.ui-toolbar{
   background-color: #222b45!important;
 }
+//::ng-deep.ui-button {
+//  color: #ffffff;
+//  background-color: #222b45;
+//}
