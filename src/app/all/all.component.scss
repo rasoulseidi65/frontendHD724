@@ -16,10 +16,18 @@
   -o-transition: all 1s;
   transition: all 1s;
 }
+.container .col-sm-3:hover .caption{
+  bottom: 15px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
 .container .col-sm-3 .caption{
-  position: fixed;
+  position: relative;
   z-index: -9;
-  top:303px;
+  bottom: 40px;
 }
 .container .col-sm-3 .caption span{
   font-family: IRANSans_Light;
