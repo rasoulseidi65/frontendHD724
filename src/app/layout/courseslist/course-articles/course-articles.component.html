@@ -1,0 +1,129 @@
+<app-top-menu></app-top-menu>
+<app-center-menu></app-center-menu>
+<app-menu></app-menu>
+<div class="container">
+  <div class="row row-article" *ngFor="let number of [0,1,2,3]">
+    <div class="col-sm-3">
+      <div class="thumbnail thumbnail-body " routerLink="/detailArticle">
+        <div class="panel-heading">
+          <img class="img-responsive" src="/assets/bootstrap/img/media.jpg" alt="">
+        </div>
+        <div class="panel-body">
+          <a routerLink="/detailArticle"><span><i class="fa fa-circle"></i>طراحی گرافیکی با فتوشاپ</span></a>
+        </div>
+        <div class="panel-footer">
+          <div class="stats">
+            <div>
+              <div class="title">لایک</div>
+              <i class="fa fa-thumbs-up"></i>
+              <div class="value">123</div>
+            </div>
+            <div>
+              <div class="title">نمایش</div>
+              <i class="fas fa-eye"></i>
+              <div class="value">14</div>
+            </div>
+            <div>
+              <div class="title">تاریخ انتشار</div>
+              <i class="fa fa-calendar"></i>
+              <div class="value">1399</div>
+            </div>
+          </div>
+          <a routerLink="/detailArticle"><span>ادامه مطالب</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail thumbnail-body " routerLink="/detailArticle">
+        <div class="panel-heading">
+          <img class="img-responsive" src="/assets/bootstrap/img/media.jpg" alt="">
+        </div>
+        <div class="panel-body">
+          <a routerLink="/detailArticle"><span><i class="fa fa-circle"></i>طراحی گرافیکی با فتوشاپ</span></a>
+        </div>
+        <div class="panel-footer">
+          <div class="stats">
+            <div>
+              <div class="title">لایک</div>
+              <i class="fa fa-thumbs-up"></i>
+              <div class="value">123</div>
+            </div>
+            <div>
+              <div class="title">نمایش</div>
+              <i class="fas fa-eye"></i>
+              <div class="value">14</div>
+            </div>
+            <div>
+              <div class="title">تاریخ انتشار</div>
+              <i class="fa fa-calendar"></i>
+              <div class="value">1399</div>
+            </div>
+          </div>
+          <a routerLink="/detailArticle"><span>ادامه مطالب</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail thumbnail-body " routerLink="/detailArticle">
+        <div class="panel-heading">
+          <img class="img-responsive" src="/assets/bootstrap/img/media.jpg" alt="">
+        </div>
+        <div class="panel-body">
+          <a routerLink="/detailArticle"><span><i class="fa fa-circle"></i>طراحی گرافیکی با فتوشاپ</span></a>
+        </div>
+        <div class="panel-footer">
+          <div class="stats">
+            <div>
+              <div class="title">لایک</div>
+              <i class="fa fa-thumbs-up"></i>
+              <div class="value">123</div>
+            </div>
+            <div>
+              <div class="title">نمایش</div>
+              <i class="fas fa-eye"></i>
+              <div class="value">14</div>
+            </div>
+            <div>
+              <div class="title">تاریخ انتشار</div>
+              <i class="fa fa-calendar"></i>
+              <div class="value">1399</div>
+            </div>
+          </div>
+          <a routerLink="/detailArticle"><span>ادامه مطالب</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail thumbnail-body " routerLink="/detailArticle">
+        <div class="panel-heading">
+          <img class="img-responsive" src="/assets/bootstrap/img/media.jpg" alt="">
+        </div>
+        <div class="panel-body">
+          <a routerLink="/detailArticle"><span><i class="fa fa-circle"></i>طراحی گرافیکی با فتوشاپ</span></a>
+        </div>
+        <div class="panel-footer">
+          <div class="stats">
+            <div>
+              <div class="title">لایک</div>
+              <i class="fa fa-thumbs-up"></i>
+              <div class="value">123</div>
+            </div>
+            <div>
+              <div class="title">نمایش</div>
+              <i class="fas fa-eye"></i>
+              <div class="value">14</div>
+            </div>
+            <div>
+              <div class="title">تاریخ انتشار</div>
+              <i class="fa fa-calendar"></i>
+              <div class="value">1399</div>
+            </div>
+          </div>
+          <a routerLink="/detailArticle"><span>ادامه مطالب</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p-paginator [rows]="10" [totalRecords]="120" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
+</div>
+<app-footer></app-footer>

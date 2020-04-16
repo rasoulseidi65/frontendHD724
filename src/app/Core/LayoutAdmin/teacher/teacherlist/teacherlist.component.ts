@@ -52,7 +52,8 @@ export class TeacherlistComponent implements OnInit {
       { field: 'firstName', header: 'نام' },
       { field: 'lastName', header: 'فامیلی' },
       { field: 'mobile', header: 'موبایل' },
-      { field: 'email', header: 'ایمبل' }
+      { field: 'madrak', header: 'مدرک' },
+      { field: 'field', header: 'رشته' }
     ];
 
   }

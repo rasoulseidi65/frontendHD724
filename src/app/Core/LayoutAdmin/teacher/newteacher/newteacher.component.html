@@ -83,7 +83,18 @@
           <p-message style="text-align: right" severity="error" text="خلاصه مقاله" *ngIf="!userform.controls['madrak'].valid&&userform.controls['madrak'].dirty"></p-message>
         </div>
       </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          رشته <label style="color: red">*</label>:
+        </div>
+        <div class="ui-grid-col-6">
+          <input type="text" pInputText  formControlName="field" >
 
+        </div>
+        <div class="ui-grid-col-4">
+          <p-message severity="error" text="رشته تحصیلی را به درستی وارد نمائید" *ngIf="!userform.controls['field'].valid&&userform.controls['field'].dirty"></p-message>
+        </div>
+      </div>
       <div class="ui-grid-row">
         <div class="ui-grid-col-2">
           تصویر پروفایل :

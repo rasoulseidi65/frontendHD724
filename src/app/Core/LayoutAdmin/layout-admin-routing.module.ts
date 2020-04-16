@@ -6,6 +6,8 @@ import {NewpaperComponent} from './paper/newpaper/newpaper.component';
 import {PaperlistComponent} from './paper/paperlist/paperlist.component';
 import {NewteacherComponent} from './teacher/newteacher/newteacher.component';
 import {TeacherlistComponent} from './teacher/teacherlist/teacherlist.component';
+import {NewcoursesComponent} from './Courses/newcourses/newcourses.component';
+import {ListcoursesComponent} from './Courses/listcourses/listcourses.component';
 
 
 const routes: Routes = [
@@ -48,7 +50,24 @@ const routes: Routes = [
       path: 'listTeacher',
       component: TeacherlistComponent
     }]
+  },
+  {
+    path: '',
+    component: DashboardComponent,
+    children: [{
+      path: 'newCourses',
+      component: NewcoursesComponent
+    }]
+  },
+  {
+    path: '',
+    component: DashboardComponent,
+    children: [{
+      path: 'listCourses',
+      component: ListcoursesComponent
+    }]
   }
+
 ];
 
 @NgModule({

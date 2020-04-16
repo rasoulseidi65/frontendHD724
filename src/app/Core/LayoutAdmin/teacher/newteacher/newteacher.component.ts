@@ -32,6 +32,7 @@ export class NewteacherComponent implements OnInit {
       'password': new FormControl('',Validators.compose([Validators.required, Validators.minLength(8)])),
       'profileImage': new FormControl('', Validators.required),
       'madrak': new FormControl('', Validators.required),
+      'field': new FormControl('', Validators.required),
       'cv': new FormControl('', Validators.required)
     });
   }

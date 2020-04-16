@@ -158,3 +158,6 @@ p-accordionTab{
 ::ng-deep.ui-menubar .ui-menuitem-link .ui-menuitem-icon{
   color:white!important;
 }
+::ng-deep.ui-accordion .ui-accordion-content {
+  margin-top: -20px!important;
+}

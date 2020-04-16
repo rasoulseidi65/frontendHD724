@@ -21,6 +21,18 @@ const routes: Routes = [
     loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
   },
   {
+    path: 'Courses',
+    loadChildren: () => import('./layout/courseslist/courseslist.module').then(m => m.CourseslistModule)
+  },
+  {
+    path: 'support',
+    loadChildren: () => import('./layout/suport/suport.module').then(m => m.SuportModule)
+  },
+  {
+    path: 'teacher',
+    loadChildren: () => import('./layout/teacher-come/teacher-come.module').then(m => m.TeacherComeModule)
+  },
+  {
     path: 'detail',
     loadChildren: () => import('./details/details.module').then(m => m.DetailsModule)
   },

@@ -9,6 +9,7 @@ export class Teacher {
     public password?: string,
     public profileImage?: string,
     public madrak?: string,
+    public field?: string,
     public cv?: string,
   ) {
   }

@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { LayoutAdminRoutingModule } from './layout-admin-routing.module';
+import {LayoutAdminRoutingModule} from './layout-admin-routing.module';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {MatButtonModule, MatIconModule, MatListModule, MatRadioModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {AccordionModule} from 'primeng/accordion';
@@ -14,24 +14,25 @@ import {
   OverlayPanelModule,
   PanelModule, PasswordModule,
   SplitButtonModule,
-  ToolbarModule
+  ToolbarModule, TreeTableModule
 } from 'primeng/primeng';
-import { ContentdashboardComponent } from './contentdashboard/contentdashboard.component';
+import {ContentdashboardComponent} from './contentdashboard/contentdashboard.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {ToastModule} from 'primeng/toast';
 import {QuillModule} from 'ngx-quill';
 import {DpDatePickerModule} from 'ng2-jalali-date-picker';
 import {NewpaperComponent} from './paper/newpaper/newpaper.component';
-import { PaperlistComponent } from './paper/paperlist/paperlist.component';
+import {PaperlistComponent} from './paper/paperlist/paperlist.component';
 import {TableModule} from 'primeng/table';
-import { NewteacherComponent } from './teacher/newteacher/newteacher.component';
-import { TeacherlistComponent } from './teacher/teacherlist/teacherlist.component';
-
-
+import {NewteacherComponent} from './teacher/newteacher/newteacher.component';
+import {TeacherlistComponent} from './teacher/teacherlist/teacherlist.component';
+import {NewcoursesComponent} from './Courses/newcourses/newcourses.component';
+import {ListcoursesComponent} from './Courses/listcourses/listcourses.component';
+import {IRCurrencyPipe} from 'ngx-persian';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ContentdashboardComponent,NewpaperComponent, PaperlistComponent, NewteacherComponent, TeacherlistComponent],
+  declarations: [IRCurrencyPipe, DashboardComponent, ContentdashboardComponent, NewpaperComponent, PaperlistComponent, NewteacherComponent, TeacherlistComponent, NewcoursesComponent, ListcoursesComponent],
   imports: [
     CommonModule,
     MatSidenavModule,
@@ -62,9 +63,12 @@ import { TeacherlistComponent } from './teacher/teacherlist/teacherlist.componen
     PasswordModule,
     KeyFilterModule,
     InputMaskModule,
-    MenubarModule
+    MenubarModule,
+    TreeTableModule,
+
   ],
 
-  exports:[DashboardComponent]
+  exports: [DashboardComponent]
 })
-export class LayoutAdminModule { }
+export class LayoutAdminModule {
+}

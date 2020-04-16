@@ -1,127 +1,129 @@
 /*start-film-all*/
-.container .col-sm-3{
+.container-fluid .col-sm-12 .row .col-sm-3{
   margin-top: 40px;
-  z-index: 999;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   -ms-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
-}
-.container .col-sm-3:hover{
-  margin-top: 13px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.container .col-sm-3:hover .caption{
-  bottom: 15px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.container .col-sm-3 .caption{
-  position: relative;
-  z-index: -9;
-  bottom: 40px;
-}
-.container .col-sm-3 .caption span{
-  font-family: IRANSans_Light;
-  margin-right: 15px;
-  font-size: 14px;
-  color: #3e3e3e ;
-}
-.container .col-sm-3 .caption a{
-  font-family: IRANSans_Light;
-  margin-right: 15px;
-  font-size: 14px;
-  color: #00C851;
-}
-.container .col-sm-3 .caption span i{
-  margin-left: 5px;
-}
-.container .col-sm-3 .row-film-all{
-  padding: 0px;
-  margin: 0;
-}
-.container .col-sm-3 .row-film-all  .thumbnail-body-film{
-  border: none;
   padding: 0;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-heading{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film{
+  border: none;
+}
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film a{
+  text-decoration: none;
+}
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-heading{
   padding: 0;
   margin: 0;
   border: none;
+  border-top-left-radius:5px ;
+  border-top-right-radius: 5px;
+
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-heading img{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-heading img{
   width: 100%;
+  height: 200px;
+  border-top-left-radius:5px ;
+  border-top-right-radius: 5px;
+  -moz-transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-heading .hover-img{
-  text-align: center;
-  width: 90%;
-  height: 193px;
-  background: #000000;
-  top: -18px;
-  position: absolute;
-  right: 15px;
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-heading:hover img{
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   opacity: 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-heading:hover .hover-img{
-  opacity: 0.7;
-  top: 0px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-heading a img{
+  width: 98%;
+  height: 200px;
+  border-top-left-radius:5px ;
+  border-top-right-radius: 5px;
+  -moz-transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -moz-transform: rotateY(18deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-heading .hover-img img{
-  width: auto;
-  height: auto;
-  margin-top: 25%;
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-heading:hover a img{
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: unset;
+
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-body{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-body{
   background-color: #03af8c;
   border: none;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-body span{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-body span{
   color: #ffffff;
   font-family: IRANSans_Light;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-body a{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-body a{
   text-decoration: none;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-body a span i{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-body a span i{
   margin-left: 5px;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-footer{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer{
   background-color: #ff7800;
   margin: 0px 3px;
   box-shadow: 0px 5px 7px -5px #000 inset;
   border-bottom-left-radius:7px ;
   border-bottom-right-radius:7px ;
-  height: 40px;
+  height: auto;
   color: #ffffff;
   border-top: none;
+
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-footer img{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer img{
   width: 40px;
   height: 40px;
   border: 3px solid #ffffff;
-  position: absolute;
+  display: unset;
 }
-.container .col-sm-3 .row-film-all  .thumbnail-body-film .panel-footer span{
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer span{
   text-decoration: none;
   font-family: IRANSans_Light;
   color: #ffffff;
+}
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer .caption{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer .caption span{
+  font-family: IRANSans_Light;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-right: 15px;
+}
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer .caption a{
+  font-family: IRANSans_Light;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.container-fluid .col-sm-12 .row .col-sm-3   .thumbnail-body-film .panel-footer .caption span i{
+  margin-left: 5px;
 }
 /*end-film-all*/
