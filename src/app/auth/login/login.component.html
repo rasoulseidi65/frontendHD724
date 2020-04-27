@@ -1,27 +1,58 @@
 <app-top-menu></app-top-menu>
-<app-center-menu></app-center-menu>
-<app-menu></app-menu>
+
+
 <div class="container-fluid">
-  <div class="container">
-    <div class="form-container sign-in-container">
-      <form action="#">
-        <h1>ورود</h1>
-        <div class="social-container">
-          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <span>از حساب کاربری خود استفاده کنید</span>
-        <input type="email" placeholder="ایمیل" />
-        <input type="password" placeholder="رمز عبور" />
-        <a href="#">فراموش کردن پسورد؟</a>
-        <button>ورود</button>
-      </form>
-    </div>
-    <div class="overlay-container">
-      <div class="overlay">
-        <div class="overlay-panel overlay-right">
-          <img class="img-responsive" src="../../../assets/bootstrap/img/login.png" alt="">
+  <div class="row text-center row-log-reg">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="thumbnail">
+          <div class="panel-heading">
+            <h4>ورود به همراه دانش</h4>
+          </div>
+          <div class="panel-body">
+            <form [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">
+
+              <div class="ui-g">
+                <div class="ui-g-4">
+                  <p-radioButton name="groupname" value="admin"  label="مدیر"></p-radioButton>
+                </div>
+                <div class="ui-g-4">
+                <p-radioButton name="groupname" value="teacher" label="مدرس" ></p-radioButton>
+                </div>
+                <div class="ui-g-4">
+                  <p-radioButton name="groupname" value="user"  label="کاربر"></p-radioButton>
+                </div>
+                </div>
+              <div class="col-md-10 col-md-offset-1" style="text-align: right">
+<!--                <label>شماره همراه:</label>-->
+                <div class="input-group form-group">
+                  <span class="input-group-addon"><i class="fas fa-mobile"></i></span>
+                  <input class="form-control" formControlName="mobile" type="text"  placeholder="شماره همراه ">
+                </div>
+              </div>
+              <div class="col-md-10 col-md-offset-1" style="text-align: right">
+<!--                <label>گذر واژه:</label>-->
+                <div class="input-group form-group">
+                  <span class="input-group-addon"><i class="fas fa-lock"></i></span>
+                  <input pPassword class="form-control" formControlName="password" placeholder="گذر واژه" type="password"  promptLabel="رمز را وارد نمائید" weakLabel="ضعیف" mediumLabel="متوسط" strongLabel="قوی"/>
+                </div>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="checkbox">
+                  <a class="pull-left" href="#">فراموش کردن رمز عبور</a>
+                  <input class="pull-right" type="checkbox">
+                  <span>مرا به خاطر بسپار</span>
+                </div>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <button class="btn-block" pButton type="submit" icon="pi pi-check" label="ورود" [disabled]="!userform.valid"></button>
+              </div>
+            </form>
+          </div>
+          <div class="panel-footer">
+            <span>کاربر جدید هستید؟</span>
+            <a href="#">ثبت نام در همراه دانش</a>
+          </div>
         </div>
       </div>
     </div>

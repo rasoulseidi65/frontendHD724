@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {AuthGuard} from './auth/auth.guard';
+
 
 
 const routes: Routes = [
@@ -42,7 +44,12 @@ const routes: Routes = [
   },
   {
     path: 'admin/panel',
-    loadChildren: () => import('./Core/LayoutAdmin/layout-admin.module').then(m => m.LayoutAdminModule)
+    loadChildren: () => import('./Core/LayoutAdmin/layout-admin.module').then(m => m.LayoutAdminModule),
+    // canActivate:[AuthGuard]
+  },
+  {
+    path: 'user/panel',
+    loadChildren: () => import('./Core/LayoutUsers/layoutusers.module').then(m => m.LayoutusersModule)
   },
   {
     path: '',

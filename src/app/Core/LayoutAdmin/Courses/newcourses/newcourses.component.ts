@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {MessageService, SelectItem, TreeNode} from 'primeng/api';
 import {CoursesService} from '../courses.service';
+import {TeacherService} from '../../teacher/teacher.service';
 
 @Component({
   selector: 'app-newcourses',
@@ -12,27 +13,37 @@ export class NewcoursesComponent implements OnInit {
   userform: FormGroup;
   submitted: boolean;
   categories: SelectItem[];
-  teachers: SelectItem[];
+  teachers: SelectItem[]=[];
   files1: TreeNode[];
   cols: any[];
 
-  constructor(private fb: FormBuilder, private messageService: MessageService, private courseService: CoursesService) {
+  constructor(private fb: FormBuilder, private messageService: MessageService, private courseService: CoursesService
+    , private TeacherService: TeacherService) {
     this.categories = [
       {label: 'برنامه نویسی', value: 'برنامه نویسی'},
       {label: 'شبکه های کامپیوتری', value: 'شبکه های کامپیوتری'},
       {label: 'گرافیک', value: 'گرافیک'},
       {label: 'ریاضی', value: 'ریاضی'},
     ];
-    this.teachers = [
-      {label: 'میلا مقدس', value: 'برنامه نویسی'},
-      {label: 'رسول صیدی', value: 'شبکه های کامپیوتری'},
-      {label: 'خسرو', value: 'گرافیک'},
-      {label: 'سمیرا خسروی', value: 'ریاضی'},
-    ];
+    // this.teachers = [
+    //   {label: 'میلا مقدس', value: 'برنامه نویسی'},
+    //   {label: 'رسول صیدی', value: 'شبکه های کامپیوتری'},
+    //   {label: 'خسرو', value: 'گرافیک'},
+    //   {label: 'سمیرا خسروی', value: 'ریاضی'},
+    // ];
   }
 
   ngOnInit() {
-    // this.courseService.getAll().subscribe((files)=>{ this.files1 = files;});
+    this.TeacherService.index().subscribe((response) => {
+      let result = response['data'];
+      for (let i = 0; i <result.length; i++) {
+        this.teachers.push({
+          label: result[i]['firstname'],
+          value: result[i]['firstname']
+        });
+      }
+      console.log(this.teachers);
+    });
     this.userform = this.fb.group({
       'title': new FormControl('', Validators.required),
       'categories': new FormControl('', Validators.required),

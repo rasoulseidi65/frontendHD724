@@ -6,13 +6,15 @@ import {DetailsComponent} from './details.component';
 import {BodyComponent} from './body/body.component';
 import {ArchiveComponent} from './archive/archive.component';
 import {CommantsComponent} from './commants/commants.component';
+import {LayoutModule} from '../layout/layout.module';
 
 
 @NgModule({
   declarations: [DetailsComponent, BodyComponent, ArchiveComponent, CommantsComponent],
   imports: [
     CommonModule,
-    DetailsRoutingModule
+    DetailsRoutingModule,
+    LayoutModule
   ],
   exports: [DetailsComponent, BodyComponent, ArchiveComponent, CommantsComponent]
 })

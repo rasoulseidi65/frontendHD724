@@ -15,4 +15,8 @@ export class CoursesService {
   getAll(): Observable<Courses[]> {
     return this.http.get<Courses[]>('/assets/json/data.json', {observe: 'body'});
   }
+
+  getTeacher(){
+
+  }
 }
