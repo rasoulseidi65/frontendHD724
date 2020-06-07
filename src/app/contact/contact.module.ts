@@ -12,6 +12,8 @@ import {PanelModule} from 'primeng/panel';
 import {ReactiveFormsModule} from '@angular/forms';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {DropdownModule} from 'primeng/dropdown';
+import {KeyFilterModule} from 'primeng/keyfilter';
+import {InputMaskModule} from 'primeng/inputmask';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {DropdownModule} from 'primeng/dropdown';
     PanelModule,
     ReactiveFormsModule,
     InputTextareaModule,
-    DropdownModule
+    DropdownModule,
+    KeyFilterModule,
+    InputMaskModule
   ]
 })
 export class ContactModule { }

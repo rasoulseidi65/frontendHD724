@@ -11,7 +11,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ToastModule} from 'primeng/toast';
 import {KeyFilterModule} from 'primeng/keyfilter';
 import {MessageModule} from 'primeng/message';
-import {RadioButtonModule} from 'primeng/primeng';
+import {CaptchaModule, RadioButtonModule} from 'primeng/primeng';
 import {MatRadioModule} from '@angular/material';
 
 
@@ -31,7 +31,8 @@ import {MatRadioModule} from '@angular/material';
     MessageModule,
     RadioButtonModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
+    CaptchaModule
   ],
 
 })

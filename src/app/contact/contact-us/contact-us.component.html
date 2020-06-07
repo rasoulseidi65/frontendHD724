@@ -18,7 +18,7 @@
                 <input pInputText type="text" formControlName="firstname" placeholder=""/>
               </div>
               <div class="ui-grid-col-4">
-                <p-message severity="error" text="Firstname is required" *ngIf="!userform.controls['firstname'].valid&&userform.controls['firstname'].dirty"></p-message>
+                <p-message severity="error" text="نام و نام خانوادگی را وارد نمائید" *ngIf="!userform.controls['firstname'].valid&&userform.controls['firstname'].dirty"></p-message>
               </div>
             </div>
             <div class="ui-grid-row">
@@ -26,10 +26,11 @@
                 شماره همراه *:
               </div>
               <div class="ui-grid-col-6">
-                <input pInputText type="text" formControlName="mobile" placeholder=""/>
+                <p-inputMask mask="(0999) 999-9999" pKeyFilter="num" formControlName="mobile"></p-inputMask>
+<!--                <input pInputText pKeyFilter="num" type="text" formControlName="mobile" placeholder=""/>-->
               </div>
               <div class="ui-grid-col-4">
-                <p-message severity="error" text="Lastname is required" *ngIf="!userform.controls['mobile'].valid&&userform.controls['mobile'].dirty"></p-message>
+                <p-message severity="error" text="شماره همراه را وارد نمائید" *ngIf="!userform.controls['mobile'].valid&&userform.controls['mobile'].dirty"></p-message>
               </div>
             </div>
             <div class="ui-grid-row">
@@ -40,7 +41,7 @@
                 <input pInputText type="text" formControlName="email" placeholder=""/>
               </div>
               <div class="ui-grid-col-4">
-                <p-message severity="error" text="Lastname is required" *ngIf="!userform.controls['email'].valid&&userform.controls['email'].dirty"></p-message>
+                <p-message severity="error" text="ایمیل را وارد نمائید" *ngIf="!userform.controls['email'].valid&&userform.controls['email'].dirty"></p-message>
               </div>
             </div>
             <div class="ui-grid-row">
@@ -48,8 +49,10 @@
                 موضوع:
               </div>
               <div class="ui-grid-col-6">
-                <p-dropdown [options]="subject" formControlName="gender"></p-dropdown>              </div>
-              <div class="ui-grid-col-4"></div>
+                <p-dropdown [options]="subject" formControlName="subject"></p-dropdown>              </div>
+              <div class="ui-grid-col-4">
+                <p-message severity="error" text="موضوع درخواستی را وارد نمائید" *ngIf="!userform.controls['subject'].valid&&userform.controls['subject'].dirty"></p-message>
+              </div>
             </div>
             <div class="ui-grid-row">
               <div class="ui-grid-col-2">
@@ -58,7 +61,9 @@
               <div class="ui-grid-col-6">
                 <textarea pInputTextarea type="text" formControlName="text"></textarea>
               </div>
-              <div class="ui-grid-col-4"></div>
+              <div class="ui-grid-col-4">
+                <p-message severity="error" text="متن درخواستی را وارد نمائید" *ngIf="!userform.controls['text'].valid&&userform.controls['text'].dirty"></p-message>
+              </div>
             </div>
             <div class="ui-grid-row">
               <div class="ui-grid-col-2"></div>
