@@ -56,12 +56,13 @@
   background-color: #03af8c;
   border-radius: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   font-size: 20px;
   position: absolute;
   margin-top: 30px;
   width: 45px;
   height: 45px;
+  left: 5px;
 }
 @media (max-width:  770px) {
   .container-fluid .row-top-menu-left ul{
