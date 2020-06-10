@@ -11,7 +11,7 @@
   font-family: IRANSans_Bold;
   font-size: 18px;
   top: 40px;
-  position: relative;
+  /*position: relative;*/
 }
 .container-fluid .row-header .search{
   background-color: #ffffff;
@@ -44,7 +44,7 @@
   margin-left: 5px;
 }
 .container-fluid .row-header .col-md-8{
-  top: 175px;
+  top: 35px;
 }
 @media (max-width: 970px) {
   .container-fluid .row-header .col-md-8{
@@ -57,7 +57,7 @@
   text-decoration: none;
   color: #ff7800;
   border: 1px solid #ff7800;
-  padding: 15px 70px;
+  padding: 15px 40px;
   background-color: #ffffff;
   opacity: 75%;
   margin-left: 30px;
@@ -67,6 +67,7 @@
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+
 }
 .container-fluid .row-header a:hover{
    color: #03af8c;
