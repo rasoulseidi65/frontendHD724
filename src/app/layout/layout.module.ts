@@ -14,6 +14,8 @@ import {TopMenuComponent} from './top-menu/top-menu.component';
 import {CenterMenuComponent} from './center-menu/center-menu.component';
 import {MenuComponent} from './menu/menu.component';
 import {FooterComponent} from './footer/footer.component';
+import {GalleriaModule} from "primeng/galleria";
+import {SharedModule} from "primeng/primeng";
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import {FooterComponent} from './footer/footer.component';
     , FilmComponent, ArticleComponent, TopMenuComponent, CenterMenuComponent,MenuComponent,FooterComponent],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    GalleriaModule,
+    SharedModule
   ],
   exports: [IndexComponent,
     HeaderComponent,
