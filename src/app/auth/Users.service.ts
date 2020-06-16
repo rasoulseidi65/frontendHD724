@@ -14,12 +14,12 @@ export class UsersService {
     this.http = http;
   }
   register(data:any): Observable<Users[]> {
-    return this.http.post<Users[]>('http://localhost:3000/api/v1/users/register', data);
+    return this.http.post<Users[]>('http://api.hd724.com/api/v1/users/register', data);
   }
   login(data:any): Observable<Users[]> {
-    return this.http.post<Users[]>('http://localhost:3000/api/v1/users/login', data);
+    return this.http.post<Users[]>('http://api.hd724.com/api/v1/users/login', data);
   }
   registerTeacher(data:any): Observable<Users[]> {
-    return this.http.post<Users[]>('http://localhost:3000/api/v1/teacher/register', data);
+    return this.http.post<Users[]>('http://api.hd724.com/api/v1/teacher/register', data);
   }
 }

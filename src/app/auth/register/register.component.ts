@@ -13,7 +13,8 @@ export class RegisterComponent implements OnInit {
   userform: FormGroup;
 
   submitted: boolean;
-  selectUser:string;
+  selectUser: string;
+
   constructor(private fb: FormBuilder, private messageService: MessageService, private UsersService: UsersService) {
   }
 
@@ -31,20 +32,23 @@ export class RegisterComponent implements OnInit {
 
   onSubmit(value: string) {
     this.submitted = true;
-    console.log(this.selectUser)
-    if(this.selectUser==='teacher') {
+
+    if (this.selectUser === 'teacher') {
       this.UsersService.registerTeacher(this.userform.value).subscribe((response) => {
+
         if (response['success'] === true) {
           this.messageService.add({severity: 'success', summary: 'ثبت با موفقیت', detail: 'مدرس مشخصات با موفقیت ثبت شد'});
-        }
-
+        }  else {
+        this.messageService.add({severity: 'error', summary: 'اخطار', detail: response['data']});
+      }
       });
-    }
-    else{
+    } else {
       this.UsersService.register(this.userform.value).subscribe((response) => {
-        console.log(response)
         if (response['success'] === true) {
           this.messageService.add({severity: 'success', summary: 'ثبت با موفقیت', detail: 'کاربر مشخصات با موفقیت ثبت شد'});
+        } else {
+          this.messageService.add({severity: 'error', summary: 'اخطار', detail: response['data']});
+
         }
 
       });

@@ -14,8 +14,9 @@ import {TopMenuComponent} from './top-menu/top-menu.component';
 import {CenterMenuComponent} from './center-menu/center-menu.component';
 import {MenuComponent} from './menu/menu.component';
 import {FooterComponent} from './footer/footer.component';
-import {GalleriaModule} from "primeng/galleria";
-import {SharedModule} from "primeng/primeng";
+import {GalleriaModule} from 'primeng/galleria';
+import {ButtonModule, SharedModule} from 'primeng/primeng';
+import {CarouselModule} from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import {SharedModule} from "primeng/primeng";
     CommonModule,
     LayoutRoutingModule,
     GalleriaModule,
-    SharedModule
+    SharedModule,
+    ButtonModule,
+    CarouselModule
   ],
   exports: [IndexComponent,
     HeaderComponent,

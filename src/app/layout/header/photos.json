@@ -1,14 +1,14 @@
 {
   "data":[
     {
-      "previewImageSrc": "assets/bootstrap/img/slider2.jpg",
+      "previewImageSrc": "/assets/bootstrap/img/slider2.jpg",
       "thumbnailImageSrc": "assets/bootstrap/img/slider2.jpg",
       "alt": "Description for Image 1",
       "title": "Title 1"
     },
     {
-      "previewImageSrc": "assets/bootstrap/img/slider2.jpg",
-      "thumbnailImageSrc": "assets/bootstrap/img/slider2.jpg",
+      "previewImageSrc": "/assets/bootstrap/img/slider2.jpg",
+      "thumbnailImageSrc": "/assets/bootstrap/img/slider2.jpg",
       "alt": "Description for Image 2",
       "title": "Title 2"
     }

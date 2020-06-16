@@ -105,3 +105,8 @@
   font-family: IRANSans_Light;
 }
 /*end-contact-us*/
+::ng-deep.ui-panel-title{ font-family: IRANSans_Light;}
+.ui-grid-col-3{font-family: IRANSans_Light;}
+input,textarea,button{font-family: IRANSans_Light;}
+::ng-deep.ui-message-text{font-family: IRANSans_Light;}
+.ui-grid-col-7{font-family: IRANSans_Light;}

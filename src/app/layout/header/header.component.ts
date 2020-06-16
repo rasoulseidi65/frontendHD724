@@ -29,7 +29,8 @@ export class HeaderComponent implements OnInit {
   constructor(private photoService: PhotoService) { }
 
   ngOnInit(): void {
-    this.photoService.getImages().then(images => this.images = images);
+
+    this.photoService.getImages().then(images =>{ this.images = images;  console.log(this.images)});
   }
 }
 

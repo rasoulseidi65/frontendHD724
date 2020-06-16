@@ -34,7 +34,7 @@ export class TeacherlistComponent implements OnInit {
   ngOnInit() {
     this.teacherService.index().subscribe(res => {
       this.teacherModels = res['data'];
-      console.log(res);
+
     });
     this.userform = this.fb.group({
       'firstName': new FormControl('', Validators.required),
