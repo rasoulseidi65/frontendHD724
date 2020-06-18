@@ -29,10 +29,11 @@ import {TeacherlistComponent} from './teacher/teacherlist/teacherlist.component'
 import {NewcoursesComponent} from './Courses/newcourses/newcourses.component';
 import {ListcoursesComponent} from './Courses/listcourses/listcourses.component';
 import {IRCurrencyPipe} from 'ngx-persian';
+import { UserslistComponent } from './users/userslist/userslist.component';
 
 
 @NgModule({
-  declarations: [IRCurrencyPipe, DashboardComponent, ContentdashboardComponent, NewpaperComponent, PaperlistComponent, NewteacherComponent, TeacherlistComponent, NewcoursesComponent, ListcoursesComponent],
+  declarations: [IRCurrencyPipe, DashboardComponent, ContentdashboardComponent, NewpaperComponent, PaperlistComponent, NewteacherComponent, TeacherlistComponent, NewcoursesComponent, ListcoursesComponent, UserslistComponent],
   imports: [
     CommonModule,
     MatSidenavModule,

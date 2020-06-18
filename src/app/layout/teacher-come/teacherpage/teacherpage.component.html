@@ -109,6 +109,23 @@
       <div class="col-sm-12">
         <textarea rows="5" cols="30" pInputTextarea placeholder="لطفا توضیحات راجب مهارت و تخصصی در هر زمینه ای دارین به صور کامل شرح دهید"></textarea>
       </div>
+      <div class="col-sm-12">
+        <form action="#">
+        <div class="custom-file mb-3">
+            <input  type="file" class="custom-file-input" id="customFile" name="filename">
+        </div>
+        </form>
+      </div>
+      <div class="mt-3" >
+        <button style="margin-top: 5px;" type="submit" class="btn btn-primary">ارسال رزومه</button>
+      </div>
+      <script>
+        $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+      </script>
+
       <p-button class="pull-left" icon="pi pi-check" iconPos="right" label="ارسال"></p-button>
     </form>
   </div>

@@ -4,14 +4,15 @@
 }
 
 .sidenav {
+  top:208px!important;
   width: 250px;
-  background: #222b45;
-  //box-shadow: 3px 0 6px rgba(0,0,0,0,.24);
+  background: #03af8c;
+  border-left: none;
 }
 .title-sidebar{
   font-family: IRANSans_Bold;
   font-size: 16px;
-  color:white;
+  color: #FFFFFF;
   padding-right: 40px;
   text-align: center;
 }
@@ -27,32 +28,23 @@
 mat-toolbar a{
   display: inline-block;
   margin:  0 10px;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
-  font-family: IRANSans_Bold;
+  font-family: IRANSans_Light;
   font-size: 16px;
 }
 mat-nav-list a{
-  font-family: IRANSans_Bold;
-  font-size: 14px;
-  color: white;
-
+  font-family:IRANSans_Light;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 ::ng-deep.ng-content{
-  background-color: white;
+  background-color: #999999;
 }
 mat-toolbar{
   text-align: center;
 }
 
-.mat-toolbar.mat-primary {
-  background: #222b45!important;
-  color: #fff;
-}
-::ng-deep.mat-list-item :hover{
-  color:#4285F4!important;
-
-}
 mat-form-field{
   font-family:  IRANSans_Bold;
 }
@@ -68,7 +60,7 @@ mat-datepicker{
 
 }
 ::ng-deep.mat-calendar-body-cell-content:hover{
-  background-color: #4285F4!important;
+  background-color:  #03af8c !important;
   color:white;
 }
 ::ng-deep.mat-calendar-body-today{
@@ -89,24 +81,24 @@ mat-datepicker{
    float: left!important;
 }
 ::ng-deep .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
-  color: #848484;
+  color: #FFFFFF;
   float: left;
 }
 ::ng-deep.ui-accordion .ui-accordion-header a {
-  border-bottom: 1px solid #151a30!important;
-  color: #fff!important;
-  background-color: #222b45!important;
+  border-bottom: 1px solid #ff5000 !important;
+  color: #FFFFFF !important;
+  background-color: #ff5000 !important;
   //padding-bottom: 1em!important;
   //padding-right: 1em!important;
   font-weight: 700;
   transition: background-color 0.2s;
 }
 ::ng-deep.ui-accordion .ui-accordion-content {
-  background-color: #222b45!important;
+  background-color:#03af8c !important;
   border: none!important;
 }
 ::ng-deep.ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
-  color: #ffffff!important;
+  color:#FFFFFF !important;
 }
 ::ng-deep.ui-accordion .ui-accordion-header a {
   padding: 0.571em 1em;
@@ -114,7 +106,7 @@ mat-datepicker{
 
 }
 .list-group-item {
-background-color: #222b45 !important;
+background-color: #c7ecee !important;
 border: none !important;
 color: #fff !important;
 }
@@ -122,35 +114,37 @@ mat-list-item{
 color: #fff;
 }
 mat-divider{
-  color: #4c4c4c !important;
+  color: #FFFFFF  !important;
 }
 .mat-dividerMenu{
-  color: #000;
+  color: #22a6b3 ;
+
 }
 ::ng-deep.ui-accordion .ui-accordion-header {
   margin-bottom: 4px!important;
-  border-bottom: 1px solid #151a30!important;
+  border-bottom: 1px solid #c7ecee!important;
 }
 ::ng-deep.ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
-  background-color: #007ad9!important;
-  border: 1px solid #007ad9!important;
-  color: #ffffff!important;
+  background-color: #03af8c !important;
+  border: 1px solid #03af8c !important;
+  color: #FFFFFF  !important;
+
 }
 p-accordionTab{
-  font-family: IRANSans_Bold;
+  font-family: IRANSans_Light;
 }
 ::ng-deep.ui-toolbar{
-  background-color: #222b45!important;
+  background-color: #03af8c !important;
 }
 :host::ng-deep.ui-menubar {
-  background-color:#222b45!important;
-  border: 1px solid #222b45!important;
+  background-color:#03af8c !important;
+  border: 1px solid #FFFFFF !important;
   color:white!important;
   font-family: IRANSans_Bold;
 }
 ::ng-deep.ui-menubar .ui-menuitem-link,.ui-menubar .ui-menuitem-link .ui-menuitem-text{
   color:white!important;
-  background-color:#222b45!important;
+  background-color:#03af8c!important;
 }
 ::ng-deep.ui-menubar .ui-menuitem-link .ui-menuitem-text{
   color:white!important;

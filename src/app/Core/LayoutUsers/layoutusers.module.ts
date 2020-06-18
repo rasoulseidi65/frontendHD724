@@ -6,21 +6,24 @@ import {DashboardComponent} from './dashboardUser/dashboard.component';
 import {MatButtonModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {AccordionModule} from 'primeng/accordion';
 import {MenubarModule, ToolbarModule} from 'primeng/primeng';
+import {LayoutModule} from "../../layout/layout.module";
+import { CounteruserComponent } from './counteruser/counteruser.component';
 
 
 
 @NgModule({
-  declarations: [DashboardComponent],
-  imports: [
-    CommonModule,
-    LayoutUsersRoutingModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    AccordionModule,
-    ToolbarModule,
-    MatButtonModule,
-    MenubarModule
-  ]
+  declarations: [DashboardComponent, CounteruserComponent],
+    imports: [
+        CommonModule,
+        LayoutUsersRoutingModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        AccordionModule,
+        ToolbarModule,
+        MatButtonModule,
+        MenubarModule,
+        LayoutModule
+    ]
 })
 export class LayoutusersModule { }

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeacherpageComponent implements OnInit {
   index: number = 0;
+  uploadedFiles: any;
   constructor() { }
   openNext() {
     this.index = (this.index === 6) ? 0 : this.index + 1;

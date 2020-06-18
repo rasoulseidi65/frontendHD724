@@ -13,7 +13,7 @@ export class PaperService {
     this.http = http;
   }
   register(data: any): Observable<paper[]> {
-    return this.http.post<paper[]>('http://localhost:3000/api/v1/admin/article', data);
+    return this.http.post<paper[]>('http://api.hd724.com/api/v1/admin/article', data);
   }
 
   index(): Observable<paper[]> {
@@ -21,10 +21,10 @@ export class PaperService {
   }
 
   update(data: any): Observable<paper[]> {
-    return this.http.put<paper[]>('http://localhost:3000/api/v1/admin/article', data);
+    return this.http.put<paper[]>('http://api.hd724.com/api/v1/admin/article', data);
   }
 
   destory(paperID: any): Observable<paper[]> {
-    return this.http.delete<paper[]>('http://localhost:3000/api/v1/admin/article/' + paperID);
+    return this.http.delete<paper[]>('http://api.hd724.com/api/v1/admin/article' + paperID);
   }
 }

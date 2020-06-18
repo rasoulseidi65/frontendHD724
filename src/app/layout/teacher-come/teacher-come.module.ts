@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { TeacherComeRoutingModule } from './teacher-come-routing.module';
 import { TeacherpageComponent } from './teacherpage/teacherpage.component';
 import {ButtonModule} from 'primeng/button';
@@ -17,7 +16,9 @@ import {LayoutModule} from '../layout.module';
     ButtonModule,
     InputTextareaModule,
     AccordionModule,
-    LayoutModule
+    LayoutModule,
   ]
 })
 export class TeacherComeModule { }
+
+

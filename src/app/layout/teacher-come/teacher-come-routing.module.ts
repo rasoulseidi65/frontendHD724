@@ -5,7 +5,7 @@ import {TeacherpageComponent} from './teacherpage/teacherpage.component';
 
 const routes: Routes = [
   {
-    path:'' , component:TeacherpageComponent
+    path: '' , component: TeacherpageComponent
   }
 ];
 
@@ -14,3 +14,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class TeacherComeRoutingModule { }
+
