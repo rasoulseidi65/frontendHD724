@@ -50,3 +50,16 @@
 .container .row-form .col-sm-12 textarea::placeholder{
   font-family: IRANSans_Bold;
 }
+label{font-family: IRANSans_Bold;}
+input,textarea{font-family: IRANSans_Light;}
+::ng-deep.ui-message-text{font-family: IRANSans_Light;}
+::ng-deep.ui-panel .ui-panel-titlebar {
+  font-family: IRANSans_Bold;
+  background-color: #03af8c!important;
+  color: white!important;
+
+}
+::ng-deep.ui-button {
+  font-family: IRANSans_Bold!important;
+  background-color: #03af8c !important;
+}
